@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+button{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+h2{
+    font-weight: 400;
+}
+.name{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.bg-img{
+    position: fixed;
+    background-image: url('../images/pictures/edit.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.01;
+}
+.page-wrapper{
+    background: rgba(0, 0, 0, 0.911);
+    color: #fff;
+}
+.fixed{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+}
+.header{
+    background: rgba(0, 0, 0, 0.842);
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+}
+.logo-block{
+    color: steelblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0% 25%;
+}
+.nav-link{
+    justify-self: flex-end;
+}
+.nav-link a,.nav-link button{
+    color: rgba(255, 255, 255, 0.836);
+    font-size: large;
+    margin: 0px 15px;
+    padding: 8px 0px;
+    transition: all .4s linear;
+}
+.nav-link a:hover,.nav-link button:hover{
+    border-bottom: 2px solid steelblue;
+}
+
+.contents section{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.contents section div{
+    font-size: 30px;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contents span.bg{
+    position: fixed;
+    font-size: 100px;
+    font-weight: 600;
+    width: 0%;
+    height: 30%;
+    color: #69696994;
+    opacity: 0.1;
+    transform: rotate(90deg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: lowercase;
+}
+
+blockquote{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+blockquote .school{
+    font-weight: 600;
+}
+
+#friends{
+    background: rgba(70, 131, 180, 0.075);
+}
+.friends-block{
+    position: relative;
+    min-height: inherit;
+    overflow: hidden;
+}
+.friends-block img{
+    max-width: 45%;
+    position: absolute;
+    bottom: 0;
+}
+#pic1{
+    z-index: 2;
+}
+#pic2{
+    left: 150px;
+    z-index: 1;
+}
+#pic3{
+    right: 175px;
+}
+#pic4{
+    right: 0;
+}
+
+.project-block{
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-block div{
+    margin: 0 !important;
+    text-align: center;
+}
+.project-block button{
+    width: 200px;
+    height: 200px;
+    border-radius: 80px;
+    background: #fff;
+    color: #000;
+}
+.project-block div span{
+    display: block;
+    padding: 10px 0px;
+}
+.project-block button svg{
+    width: 70px;
+    height: 70px;
+}
+
+footer{
+    background: #000;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1px;
+}
