@@ -1,6 +1,5 @@
 const thumbBar = document.querySelector('.thumb-bar');
 const fullImg = document.querySelector('.full-img');
-const contactBlock = document.querySelector('.contact-wrapper');
 const closeBtn = document.querySelectorAll('.x');
 const nextBtn = document.querySelector('.next');
 const previousBtn = document.querySelector('.previous');
