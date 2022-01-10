@@ -3,7 +3,7 @@ const skillName = document.querySelector('.skill');
 {
     let skillArr = ['<Frontend Developer/>', 'UI/UX designer', 'Creative Designer']
     let textIndex = 0;
-    let charIndex = 0
+    let charIndex = 0;
 
     function type(){
         // to start typing

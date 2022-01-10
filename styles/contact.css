@@ -1,84 +1,41 @@
-.webdev-wrapper,
-.design-wrapper{
-    display: none;
-    text-align: center;
-    position: fixed;
-    inset: 0;
-    background: #000000b9;
-}
-.webdev-wrapper,
-.design-wrapper{
-    align-items: center;
-    z-index: 15;
-}
-.webdev-container,
-.design-container{
-    min-width: 60%;
-    margin: auto;
-    background: #272323;
-    border-radius: 10px;
-}
-.webdev-links{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    padding: 35px;
-}
-.webdev-links :nth-child(3),
-.webdev-links :nth-child(4){
-    justify-self: self-end;
-}
-.webdev-links .webdev-item{
-    position: relative;
-    height: 140px;
-    width: min-content;
-}
-.webdev-item img{
-    width: 200px;
-    transition: all .5s;
-}
-.webdev-item img.back{
-    margin-right: -30px;
-    margin-top: -150px;
-}
-.webdev-item img.front{
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.webdev-item a:hover img.front{
-    opacity: 1;
-}
-.full-display{
+.contact-block{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+}
+.contact-form .contact-input{
+    margin: 16px 0;
+}
+.contact-form label{
+    display: block;
+    color: #d6d6d6;
+    font-weight: 500;
+}
+.contact-form input, textarea{
+    border: 2px solid #595959;
+    border-radius: 5px;
+    background: none;
+    margin: 5px 0;
+    color: whitesmoke;
     padding: 10px;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 600;
 }
-.full-display button{
-    width: 25px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    border: 0.5px solid #ffffff09;
-    color: #f2f2f2;
-    transition: all .2s;
+.contact-form input[type=text]{
+    text-transform: capitalize;
 }
-.full-display button:hover{
-    background: #ffffff20;
-    border-color: #ffffff23;
+.contact-form input[type=text]::placeholder{
+    text-transform: none;
 }
-.full-img{
-   max-height: 500px;
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
 }
-.thumb-bar img{
-    height: 50px;
-    cursor: pointer;
+.contact-form input{
+    height: 36px;
+    width: 100%;
 }
-span.x{
-    position: absolute;
-    right: 0;
-    margin: 0px 10px;
-    cursor: pointer;
+.contact-form textarea{
+    height: 240px;
+    width: 100%;
 }

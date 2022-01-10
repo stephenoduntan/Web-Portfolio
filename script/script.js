@@ -9,21 +9,21 @@ const designWrap = document.querySelector('.design-wrapper');
 const workNavItem = document.querySelectorAll('.work-nav-link');
 const workCatBlock = document.querySelectorAll('.works');
 
-function addPicture(fold1, fold2, cat, format, container){
-    for(i = 1; i < fold2.length; i++){
-        let image = document.createElement('img');
-        image.setAttribute('src', `./images/${fold1}/${fold2}/${cat}${i}.${format}`);
-        image.setAttribute('id', `pic${i}`);
+// function addPicture(fold1, fold2, cat, format, container){
+//     for(i = 1; i < fold2.length; i++){
+//         let image = document.createElement('img');
+//         image.setAttribute('src', `./images/${fold1}/${fold2}/${cat}${i}.${format}`);
+//         image.setAttribute('id', `pic${i}`);
     
-        if(i > 4){
-            return false;
-        }else{
-            container.appendChild(image);
-        }
-    }
-}  
+//         if(i > 4){
+//             return false;
+//         }else{
+//             container.appendChild(image);
+//         }
+//     }
+// }  
 
-let pageTitle = document.createElement('span');
+//let pageTitle = document.createElement('span');
 
 // document.addEventListener('DOMContentLoaded', function(){
 //     pageTitle.textContent = "home";
@@ -52,14 +52,22 @@ document.addEventListener('scroll', function(){
 //     removeId();
 // })
 
-for(i = 0; i < workNavItem.length; i++){
-    let workItem = workNavItem[i];
-
-    workItem.addEventListener('click', function(){
-        workItem.classList.add('active-link');
-
-        if(workItem.classList.contains('active-link')){
-            workItem.classList.remove('active-link')
-        };
-    })
+function miniNav(nav, block){
+    for(i = 0; i < nav.length; i++){
+        nav[i].addEventListener('click', function(){
+            let active = document.getElementsByClassName('active-link')
+            active[0].className = active[0].className.replace('active-link', '_')
+            this.className += ' active-link';
+    
+            for(j = 0; j < block.length; j++){      
+                if (this.innerHTML === block[j].id){
+                    block[j].style.display = 'block';
+                } else{
+                    block[j].style.display = 'none';
+                }
+            }
+        })
+    }
 }
+
+miniNav(workNavItem, workCatBlock);

@@ -4,6 +4,7 @@
     background-color:rgba(225,225,225,.15); 
     border: 1px solid white; 
     padding: 10px;
+    max-width: 500px;
 }
 .skill-name{
     font-size: 60px;
@@ -28,9 +29,10 @@
 }
 
 section#home .intro{
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 
 .image{
@@ -74,14 +76,14 @@ section#home .intro{
     background-attachment: fixed;
     position: relative;
 }
-section#home .welcome{
+/* section#home .welcome{
     position: absolute;
     right: 0;
     left: 0;
     bottom: 0;
     text-align: center;
     color: steelblue;
-}
+} */
 
 .contents section p{
     margin: 0;
@@ -113,8 +115,8 @@ section#home .welcome{
 .skillset-block{
     margin: 0 auto;
     display: flex;
+    gap: 48px;
     justify-content: space-around;
-
 }
 .skillset-block .skill-card{
     width: 480px;
@@ -126,6 +128,11 @@ section#home .welcome{
     border-radius: 5%;
     position: relative;
     overflow: hidden;
+}
+.skillset-block .skill-card a{
+    position: absolute;
+    inset: 0;
+    z-index: 5;
 }
 .skillset-block .skill-card-pointer{
     font-size: 100px;
@@ -187,4 +194,16 @@ section#home .welcome{
 }
 .skill-card:hover .skill-card-pointer{
     visibility: visible;
+}
+
+@media(max-width: 1440px){
+    .name{
+        display: block;
+        margin: 10px 0;
+    }
+}
+@media(max-width: 768px){
+    section#home .intro{
+    flex-flow: column-reverse;
+    }
 }

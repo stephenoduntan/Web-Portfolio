@@ -1,0 +1,15 @@
+section#works{
+    height: 100vh;
+}
+.skillset-block-work{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: unset;
+}
+.skillset-block-work .skill-card{
+    width: inherit;
+    height: inherit;
+    border-radius: 0;
+}

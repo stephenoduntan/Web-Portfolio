@@ -20,14 +20,17 @@ section#experience .experience-block{
     color: darkgray;
     display: flex;
     justify-content: space-around;
+
 }
 .work-block-nav span:hover{
     color: white;
     cursor: pointer;
+    transition: all .5s linear;
 }
 .work-block-nav .active-link{
     color: whitesmoke;
-    border-bottom: 3px solid background;
+    border-bottom: 3px solid steelblue;
+    transition: all .5s linear;
 }
 
 .works .work-item{
@@ -82,12 +85,13 @@ input[type=range]#web::after{
 } */
 .work-cat{
     display: none;
+    transition: all .5s linear;
 }
 
-.experience-block .cv-button{
+.cv-button{
     text-align: center;
 }
-.experience-block .cv-button button{
+.cv-button button{
     color: rgba(225, 225, 225, .45);
     font-size: 24px;
     font-weight: 700;
@@ -96,7 +100,7 @@ input[type=range]#web::after{
     padding: 10px 20px;
     transition: background .1s linear;
 }
-.experience-block .cv-button button:hover{
+.cv-button button:hover{
     -webkit-text-fill-color: whitesmoke;
     background: steelblue;
 }
