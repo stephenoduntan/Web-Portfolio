@@ -1,8 +1,8 @@
 .about-intro{
     margin: 24px 0;
     display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-gap: 64px;
+    grid-auto-flow: column;
+    gap: 40px;
 }
 
 .about-intro .image::before{

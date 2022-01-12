@@ -59,6 +59,7 @@ section#home .intro{
 }
 .image::before{
     content: " ";
+    background-repeat: no-repeat;
 }
 .image:hover::after{
     content: " ";
@@ -119,8 +120,8 @@ section#home .intro{
     justify-content: space-around;
 }
 .skillset-block .skill-card{
-    width: 480px;
-    height: 560px;
+    width: 296px;
+    height: 400px;
     background: linear-gradient(180deg, white, black);
     display: flex;
     justify-content: center;
@@ -164,7 +165,7 @@ section#home .intro{
     transition: align-self 1s linear;
 }
 .skill-card-block .skill-title{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
 }
 .skill-card-block .skill-description{
@@ -204,6 +205,27 @@ section#home .intro{
 }
 @media(max-width: 768px){
     section#home .intro{
-    flex-flow: column-reverse;
+    flex-direction: column-reverse;
+    gap: 30px;
     }
+    section#home .intro .welcome-message{
+        text-align: center;
+    }
+    
+}
+@media(max-width: 425px){
+    section#home .intro .image{
+        width: 85%;
+        height: 360px;
+    }
+    .skill-block-wrapper .skillset-block{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 320px){
+    /* section#home .intro .image{
+        width: 85%;
+        height: 360px;
+    } */
 }

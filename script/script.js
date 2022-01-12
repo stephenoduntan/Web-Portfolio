@@ -71,3 +71,19 @@ function miniNav(nav, block){
 }
 
 miniNav(workNavItem, workCatBlock);
+
+let menuBtn = document.querySelector('button.menu-btn');
+let miniMenu = document.querySelector('.nav-link-mini');
+let menuOpen = false;
+
+menuBtn.addEventListener('click', function(){
+    if(!menuOpen){
+        menuBtn.classList.add('open');
+        miniMenu.classList.add('mini-nav-active');
+        menuOpen = true;
+    } else{
+        menuBtn.classList.remove('open');
+        miniMenu.classList.remove('mini-nav-active');
+        menuOpen = false;
+    }
+})
