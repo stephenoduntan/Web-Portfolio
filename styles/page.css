@@ -242,6 +242,7 @@ section.nav-link-mini aside.bg{
 .footer-wrapper .social-links{
     display: flex;
     gap: 20px;
+    z-index: 1;
 }
 .social-links svg{
     fill: whitesmoke;
@@ -276,8 +277,6 @@ section.nav-link-mini aside.bg{
         gap: 100px;
     }
     .footer-wrapper{
-        display: grid;
-        grid-template-columns: min-content 1fr min-content;
         gap: 0px;
     }
 }
@@ -292,7 +291,6 @@ section.nav-link-mini aside.bg{
     }
     .footer-wrapper .copyright{
         transform: rotate(-90deg);
-        /* flex-basis: min-content; */
     }
     section .block,
     .footer-wrapper{

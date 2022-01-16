@@ -70,7 +70,7 @@ section#home .intro{
     opacity: 0.25;
 }
 .contents section.dark-bg{
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.99)), url("../images/pictures/OO.png");
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("../images/pictures/OO.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center 50px;
