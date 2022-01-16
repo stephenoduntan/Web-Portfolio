@@ -223,9 +223,3 @@ section#home .intro{
         align-items: center;
     }
 }
-@media(max-width: 320px){
-    /* section#home .intro .image{
-        width: 85%;
-        height: 360px;
-    } */
-}

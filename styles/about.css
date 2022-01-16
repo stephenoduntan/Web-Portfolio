@@ -1,31 +1,41 @@
 .about-intro{
     margin: 24px 0;
-    display: grid;
-    grid-auto-flow: column;
+    text-align: justify;
     gap: 40px;
 }
 
+.about-intro .image{
+    width: 280px;
+    height: 360px;
+    margin: 0 24px;
+    float: right;
+}
 .about-intro .image::before{
     background-image: url("../images/pictures/IMG_20200729_125357.jpg");
 }
+.about-intro .section-nav{
+    text-align: center;
+}
 
 section#experience .experience-block{
-    display: grid;
-    justify-content: center;
-    grid-gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .work-block-nav{
     font-size: 24px;
     color: darkgray;
-    display: flex;
+    text-align: center;
     justify-content: space-around;
-
 }
 .work-block-nav span:hover{
     color: white;
     cursor: pointer;
     transition: all .5s linear;
+}
+.work-block-nav span{
+    margin: 0 16px;
 }
 .work-block-nav .active-link{
     color: whitesmoke;
@@ -103,4 +113,15 @@ input[type=range]#web::after{
 .cv-button button:hover{
     -webkit-text-fill-color: whitesmoke;
     background: steelblue;
+}
+
+@media(max-width: 425px){
+    .about-block .skill-name{
+        text-align: center;
+    }
+    .about-intro .image{
+        float: none;
+        margin: 0 auto 24px;
+        width: 85%;
+    }
 }
