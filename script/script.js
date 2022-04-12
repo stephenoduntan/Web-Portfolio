@@ -62,6 +62,15 @@ menuBtn.addEventListener('click', function(){
     }
 })
 
+let successPop = document.querySelector('.success');
+let errorPop = document.querySelector('.error');
+
+function popup(status){
+    status.style.display = "flex";
+    setTimeout(() => {
+        status.style.display = "none";
+    }, 3000);
+}
 
 window.addEventListener("load", function(){
     function sendData(){
@@ -70,19 +79,11 @@ window.addEventListener("load", function(){
         const FD = new FormData(contactForm);
 
         XHR.addEventListener("load", function(){
-            let successPop = document.querySelector('.success');
-            successPop.style.display = "flex";
-            setTimeout(() => {
-                successPop.style.display = "none";
-            }, 3000);
+            popup(successPop)
         });
 
         XHR.addEventListener("error", function(){
-            let errorPop = document.querySelector('.error');
-            errorPop.style.display = "flex";
-            setTimeout(() => {
-                errorPop.style.display = "none";
-            }, 3000);
+            popup(errorPop)
         });
 
         XHR.open("POST", "mailto:stephenoduntan28@gmail.com");
