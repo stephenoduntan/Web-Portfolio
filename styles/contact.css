@@ -14,6 +14,15 @@ span.form-label-des{
     text-align: right;
 }
 
+.form-wrapper{
+    display: flex;
+    place-content: center;
+    padding: 25px
+}
+
+.contact-form{
+    width: 75%;
+}
 .contact-form .contact-input{
     margin: 16px 0;
 }
@@ -30,7 +39,7 @@ span.form-label-des{
     border: 2px solid #595959;
     border-radius: 5px;
     background: none;
-    margin: 5px 0;
+    margin: 5px 0 20px 0;
     color: whitesmoke;
     padding: 10px;
     font-size: 20px;
