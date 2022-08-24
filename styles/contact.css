@@ -21,7 +21,7 @@ span.form-label-des{
 }
 
 .contact-form{
-    width: 75%;
+    width: calc(100% - 20px);
 }
 .contact-form .contact-input{
     margin: 16px 0;

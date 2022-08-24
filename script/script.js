@@ -70,9 +70,9 @@ let errorPop = document.querySelector('.error');
 
 function popup(status){
     status.style.display = "flex";
-    // setTimeout(() => {
-    //     status.style.display = "none";
-    // }, 3000);
+    setTimeout(() => {
+        status.style.display = "none";
+    }, 3000);
 }
 
 //Email
@@ -82,7 +82,7 @@ let emailPhone = document.querySelector('#phone');
 
 contactBtn.addEventListener("click", function(){
     if(!window.navigator.onLine){
-        popup(errorPop)
+       popup(errorPop).setTimeout(3000);
     }else{
         window.open(`mailto:stephenoduntan28@gmail.com?subject=${emailSubject.value}&body=${emailBody.value}. You can reach me on ${emailPhone.value} to discuss more`);
     }
