@@ -82,7 +82,7 @@ let emailPhone = document.querySelector('#phone');
 
 contactBtn.addEventListener("click", function(){
     if(!window.navigator.onLine){
-       popup(errorPop).setTimeout(3000);
+       popup(errorPop);
     }else{
         window.open(`mailto:stephenoduntan28@gmail.com?subject=${emailSubject.value}&body=${emailBody.value}. You can reach me on ${emailPhone.value} to discuss more`);
     }
