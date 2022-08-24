@@ -226,7 +226,7 @@ section.nav-link-mini aside.bg{
 }
 
 .footer{
-    background: #000;
+    background-color: #000;
     color: whitesmoke;
     height: 220px;
     display: flex;
@@ -255,6 +255,9 @@ section.nav-link-mini aside.bg{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+.footer-wrapper *{
+    width: 100%;
 }
 .footer-wrapper .social-links{
     display: flex;
