@@ -47,6 +47,10 @@ section#experience .experience-block{
     margin: 20px 0;
 }
 
+.apexcharts-tooltip{
+    color: #575757;
+}
+
 .experience-years{
     font-size: 16px;
     font-weight: 200;
