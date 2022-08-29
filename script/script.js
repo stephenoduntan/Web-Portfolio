@@ -16,30 +16,13 @@ document.addEventListener('scroll', function(){
 //Function to seperate categories
 function miniNav(nav, changecat, block){
     for(i = 0; i < nav.length; i++){
-        nav[i].addEventListener('click', function(){
+        nav[i].addEventListener('click', function(event){
             let active = document.getElementsByClassName('active-link')
             active[0].className = active[0].className.replace('active-link', '_')
             this.className += ' active-link';
-            
-            //work experience category
-            for(j = 0; j < block.length; j++){      
-                if (this.innerHTML === block[j].id){
-                    block[j].style.display = 'block';
-                } else{
-                    block[j].style.display = 'none';
-                }
-            }
-            //work type category
-            for(k = 0; k < changecat.length; k++){
-                if(this.innerHTML === changecat[k].classList[1]){
-                    changecat[k].style.display = 'block';
-                } else if(this.innerHTML === 'all'){
-                    changecat[k].style.display = 'block';
-                } else{
-                    changecat[k].style.display = 'none';
-                }
-            }
+            event.preventDefault()
         })
+        
     }
 }
 

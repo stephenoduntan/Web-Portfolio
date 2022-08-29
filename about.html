@@ -83,93 +83,13 @@
 
                     
                     <div class="work-block-nav">
-                        <span class="work-nav-link active-link">all</span>
-                        <span class="work-nav-link">design</span>
-                        <span class="work-nav-link">ui/ux</span>
-                        <span class="work-nav-link">development</span>
+                        <span class="work-nav-link active-link" id="nav-all">all</span>
+                        <span class="work-nav-link" id="nav-design">design</span>
+                        <span class="work-nav-link" id="nav-uiux">ui/ux</span>
+                        <span class="work-nav-link" id="nav-dev">development</span>
                     </div>
 
-                    <div id="work-chart"></div>
-
-                    <div class="work-block">
-                        <div class="all-work works" id="all">
-                            <div class="work-design work-item">
-                                Graphics Design <span class="experience-years"><span class="number-years">3</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="85%">
-                            </div>
-
-                            <div class="work-ui_ux work-item">
-                                UI/UX <span class="experience-years"><span class="number-years">1</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="70%">
-                            </div>
-
-                            <div class="work-web work-item">
-                                Web Development <span class="experience-years"><span class="number-years">2</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="70%">
-                            </div>                  
-                        </div>
-
-                        <div class="design-work works work-cat" id="design">
-                            <div class="work-design work-item">
-                                Photoshop <span class="experience-years"><span class="number-years">3</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="82%">
-                            </div>
-
-                            <div class="work-design work-item">
-                                CorelDraw <span class="experience-years"><span class="number-years">2</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="56%">
-                            </div>                 
-                        </div>
-
-                        <div class="ui_ux-work works work-cat" id="ui/ux">
-                            <div class="work-ui_ux work-item">
-                                Figma <span class="experience-years"><span class="number-years">0.6</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="75%">
-                            </div>
-
-                            <div class="work-ui_ux work-item">
-                                Adobe Xd <span class="experience-years"><span class="number-years">0.4</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="70%">
-                            </div>
-
-                            <div class="work-ui_ux work-item">
-                                User Research <span class="experience-years"><span class="number-years">0.6</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="60%">
-                            </div>
-
-                            <div class="work-ui_ux work-item">
-                                Prototyping <span class="experience-years"><span class="number-years">0.6</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="80%">
-                            </div>
-
-                            <div class="work-ui_ux work-item">
-                                User Interactive Design <span class="experience-years"><span class="number-years">0.6</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="70%">
-                            </div>                 
-                        </div>
-
-                        <div class="web-work works work-cat" id="development">
-                            <div class="work-web work-item">
-                                HTML/CSS <span class="experience-years"><span class="number-years">1.6</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="68%">
-                            </div>
-
-                            <div class="work-web work-item">
-                                Javascript <span class="experience-years"><span class="number-years">1</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="59%">
-                            </div>
-
-                            <div class="work-web work-item">
-                                TailwindCSS <span class="experience-years"><span class="number-years">1.3</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="63%">
-                            </div>  
-
-                            <div class="work-web work-item">
-                                Bootstrap <span class="experience-years"><span class="number-years">1</span>yrs</span>
-                                <input type="range" class="slider" min="0" max="100" value="50%">
-                            </div>                  
-                        </div>                      
-                    </div>
+                    <div id="work-chart" style="display: flex; place-items: center;"></div>
                     
                     <form class="cv-button section-nav" action="Oduntan Olawole CV.pdf" method="GET">
                         <button type="submit" formtarget="_blank">
