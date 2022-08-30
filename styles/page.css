@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family: system-ui;
 }
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
     width: 2em;
 }
 body::-webkit-scrollbar-track{
@@ -17,6 +17,41 @@ body::-webkit-scrollbar-thumb{
     box-shadow: inset 3px 3px 5px 0 rgba(225, 225, 225, 0.5);
     border: 5px solid black;
     background-clip: content-box;
+} */
+
+html {
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#progressBarContainer {
+    position: fixed;
+    z-index: 40;
+    background: rgba(255, 255, 255, 0.05);
+}
+  
+  
+#progressBar {
+    position: absolute;
+    will-change: transform, opacity;
+    background: linear-gradient(120deg, #cc2b5e, #753a88),
+                linear-gradient(45deg, #4776e6, #8e54e9),
+                linear-gradient(97deg, #dc2424, #4a569d);
+    box-shadow: inset 3px 3px 5px 0 rgba(225, 225, 225, 0.5);
+    transform-origin: top center;
+    transform: scale(1, 0);
+    opacity: 0;
+}
+
+#progressBarContainer,
+#progressBar {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
 }
 
 a{
