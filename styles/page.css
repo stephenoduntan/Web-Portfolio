@@ -1,23 +1,8 @@
-body{
+body, hr{
     margin: 0;
     font-family: system-ui;
 }
-/* body::-webkit-scrollbar{
-    width: 2em;
-}
-body::-webkit-scrollbar-track{
-    appearance: none;
-    background: #000;
-}
-body::-webkit-scrollbar-thumb{
-    border-radius: 150px;
-    background-image: linear-gradient(120deg, #cc2b5e, #753a88),
-                        linear-gradient(45deg, #4776e6, #8e54e9),
-                        linear-gradient(97deg, #dc2424, #4a569d);
-    box-shadow: inset 3px 3px 5px 0 rgba(225, 225, 225, 0.5);
-    border: 5px solid black;
-    background-clip: content-box;
-} */
+
 
 html {
     overflow: -moz-scrollbars-none;
@@ -30,7 +15,7 @@ html {
 #progressBarContainer {
     position: fixed;
     z-index: 40;
-    background: rgba(255, 255, 255, 0.05);
+    background: transparent;
 }
   
   

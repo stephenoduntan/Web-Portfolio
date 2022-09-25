@@ -116,17 +116,14 @@ section#home .intro{
 .skillset-block{
     margin: 0 auto;
     display: flex;
-    gap: 48px;
-    justify-content: space-around;
+    border: 1px solid white;
+    min-height: 24em;
 }
 .skillset-block .skill-card{
-    width: 296px;
-    height: 400px;
-    background: linear-gradient(180deg, white, black);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5%;
     position: relative;
     overflow: hidden;
 }
@@ -135,66 +132,59 @@ section#home .intro{
     inset: 0;
     z-index: 5;
 }
-.skillset-block .skill-card-pointer{
-    font-size: 100px;
-    position: absolute;
-    visibility: hidden;
-    z-index: 1;
-    transition: visibility .1s linear;
-}
 
 .skillset-block .design-block::after,
+.skillset-block .uiux-block::after,
 .skillset-block .dev-block::after{
     content: " ";
     width: 100%;
-    height: 100%;
-    position:absolute;
+    position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .skillset-block .design-block::after{
-    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.511), rgba(0,0,0,0.511)), url("../images/pictures/3d-object-design.jpg");
+    background-image: url("../images/display/designs/des2.png");
+    top: 0;
+    height: 0%;
+}
+.skillset-block .uiux-block::after{
+    background-image: url("../images/display/ui/Frame 85.jpg");
+    top: 0;
+    height: 0%;
 }
 .skillset-block .dev-block::after{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.511), rgba(0,0,0,0.511)), url("../images/pictures/web-development-computer-icons-website-web-design-world-wide-web-website-save-icon-format-7508b57543e06e1206d04a48761784a6.png");
+    background-image: url("../images/display/web dev/Present-tab thrivecloud.jpg");
+    top: 0;
+    height: 0%;
 }
 .skill-card-block{
     text-align: center;
-    padding: 50px 0px;
+    padding: 24px 0px;
     z-index: 1;
-    transition: align-self 1s linear;
 }
 .skill-card-block .skill-title{
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .skill-card-block .skill-description{
     display: none;
     font-size: 20px;
     font-weight: 200;
-    transition: display .3s linear;
 }
 
-@keyframes transit{
-    0%{
-        transform: scale(1.0)
-    }
-    100%{
-        transform: scale(1.3)
-    }
-}
 .skill-card:hover::after{
-    animation: transit 1.5s ease-in-out infinite;
-    animation-direction: alternate;
+    transition: height .5s ease-out;
+    height: 100%;
 }
 .skill-card:hover .skill-card-block{
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    transition: align-self 1s ease-out;
     align-self: end;
 }
 .skill-card:hover .skill-card-block .skill-description{
+    transition: display .3s linear;
     display: block;
-}
-.skill-card:hover .skill-card-pointer{
-    visibility: visible;
 }
 
 @media(max-width: 1440px){
