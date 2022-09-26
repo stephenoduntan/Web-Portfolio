@@ -90,6 +90,42 @@ section#works .works-block .work-block-nav{
     height: auto;
     /* max-height: 560px; */
 }
+.view-end-text{
+    font-size: 20px;
+    text-align: center;
+    margin: 32px auto;
+    background-image: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.65));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.view-modal{
+    position: fixed;
+    width: 100%;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+    padding: 24px 0px;
+    display: none;
+    justify-content: center;
+    background: rgba(0,0,0,0.85);
+    gap: 32px;
+    transition: display .5s ease-in-out;
+}
+.view-modal img{
+    height: 100%;
+}
+.view-modal .close-btn{
+    font-size: 32px;
+    font-weight: 600;
+    height: fit-content;
+    padding: 0px 12px 8px 12px;
+    border: 3.5px solid;
+    border-radius: 100%;
+    background: rgba(225,225,225,0.15);
+    cursor: pointer;
+}
 
 @media(max-width: 425px){
     .show-grid{

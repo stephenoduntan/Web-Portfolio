@@ -1,54 +1,41 @@
-const thumbBar = document.querySelector('.thumb-bar');
-const fullImg = document.querySelector('.full-img');
-const closeBtn = document.querySelectorAll('.x');
-const nextBtn = document.querySelector('.next');
-const previousBtn = document.querySelector('.previous');
+const designWork = document.querySelectorAll(".design img");
+const designImage = document.querySelectorAll(".design");
+const popupModal = document.querySelector(".view-modal");
+const popupImg = document.querySelector(".view-modal img");
+const extFrame = document.querySelector(".view-modal iframe");
+const close = document.querySelector(".close-btn");
 
-addPicture('display', 'designs', 'des', 'png', thumbBar);
+(() => {
+    for (s = 0; s < workImage.length; s++){
+        let img = workImage[s];
 
-for(l = 0; l < closeBtn.length; l++){
-    let x = closeBtn[l]
-    x.addEventListener('click', function(){
-        x.parentElement.parentElement.style.display = 'none';
-        document.body.style.position = 'initial';
-    })       
-}
+        img.addEventListener('click', function(){
+            if(img.classList.contains('design')){
+                let _this = img.children[1].childNodes[1];
 
-function removeId(){
-    let thumbPic = document.querySelectorAll('.thumb-bar img');
-    for(i = 0; i < thumbPic.length; i++){
-        thumbPic[i].removeAttribute('id')
+                extFrame.style.display = 'none';
+                popupImg.style.display = 'block';
+                popupImg.src = _this.src;
+                popupModal.style.display = 'flex';
+                
+                console.log(_this.src)
+            }else{
+                popupImg.style.display = 'none';
+                extFrame.style.display = 'block';
+                extFrame.src = img.title;
+                popupModal.style.display = 'flex';
+                console.log(img.title);
+            }
+            console.log('clicked')
+        })
+        
     }
-}
 
-const thumbBarImg = document.querySelectorAll('.thumb-bar img');
-
-for (i = 0; i < thumbBarImg.length; i++){
-    let e = thumbBarImg[i];
-    e.addEventListener('click', function(){
-        fullImg.src = e.src;
+    close.addEventListener('click', function(){
+        popupModal.style.display = 'none'
     })
-}
+})();
 
-let index = 1;
 
-nextBtn.addEventListener('click', function(){
-    index++;
 
-    if(index > thumbBarImg.length){
-        index = thumbBarImg.length;
-        return false;
-    }
-
-    fullImg.src =  `./images/display/designs/des${index}.png`;
-})
-previousBtn.addEventListener('click', function(){
-    index--;
-
-    if(index == 0){
-        index = 1;
-        return false;
-    }
-
-    fullImg.src =  `./images/display/designs/des${index}.png`;
-})
+console.log(designWork, popupImg, workImage)
