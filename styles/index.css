@@ -115,6 +115,7 @@ section#home .intro{
 
 .skillset-block{
     margin: 0 auto;
+    flex-wrap: nowrap;
     display: flex;
     border: 1px solid white;
     min-height: 24em;
@@ -210,6 +211,8 @@ section#home .intro{
     }
     .skill-block-wrapper .skillset-block{
         flex-direction: column;
-        align-items: center;
+    }
+    .skillset-block .skill-card{
+        height: 240px;
     }
 }

@@ -18,15 +18,14 @@ const close = document.querySelector(".close-btn");
                 popupImg.src = _this.src;
                 popupModal.style.display = 'flex';
                 
-                console.log(_this.src)
             }else{
                 popupImg.style.display = 'none';
                 extFrame.style.display = 'block';
                 extFrame.src = img.title;
                 popupModal.style.display = 'flex';
-                console.log(img.title);
+                //console.log(img.title);
             }
-            console.log('clicked')
+            //console.log('clicked')
         })
         
     }
@@ -35,7 +34,3 @@ const close = document.querySelector(".close-btn");
         popupModal.style.display = 'none'
     })
 })();
-
-
-
-console.log(designWork, popupImg, workImage)
