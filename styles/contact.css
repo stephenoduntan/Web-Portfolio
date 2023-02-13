@@ -16,15 +16,23 @@ span.form-label-des{
 
 .form-wrapper{
     display: flex;
-    place-content: center;
-    padding: 25px
+    /* place-content: center; */
+    gap: 48px;
+    padding: 25px;
+}
+
+.google-map{
+    padding: 8px;
+    border: 2.5px solid #595959;
+    border-radius: 12px;
+    width: 50%;
 }
 
 .contact-form{
-    width: calc(100% - 20px);
+    width: 50%;
 }
 .contact-form .contact-input{
-    margin: 16px 0;
+    margin: 20px 0;
 }
 .contact-form label{
     display: block;
@@ -39,7 +47,7 @@ span.form-label-des{
     border: 2px solid #595959;
     border-radius: 5px;
     background: none;
-    margin: 5px 0 20px 0;
+    margin: 0 0 24px 0;
     color: whitesmoke;
     padding: 10px;
     font-size: 20px;
@@ -63,7 +71,7 @@ input::-webkit-outer-spin-button{
     width: 100%;
 }
 .contact-form textarea{
-    height: 240px;
+    height: 160px;
     width: 100%;
 }
 .contact-form input[type=submit]{
@@ -73,8 +81,10 @@ input::-webkit-outer-spin-button{
     color: white;
     box-shadow: inset 3px 3px 5px 0 rgba(225, 225, 225, 0.5);
     padding: 20px;
-    width: 100%;
+    width: 50%;
     cursor: pointer;
+    border-radius: 20px;
+    /* margin-top: 12px; */
 }
 .contact-form input[type=submit]:hover{
     background: #0d71e4;
@@ -93,4 +103,19 @@ input::-webkit-outer-spin-button{
     background: #242424;
     border-radius: 25px;
     padding: 30px;
+}
+
+@media(max-width: 1230px){
+    .form-wrapper{
+        flex-direction: column;
+    }
+    .contact-form, .google-map{
+        width: 100%;
+    }
+    .contact-form input[type=submit]{
+        width: 100%;
+    }
+    .google-map{
+        height: 360px;
+    }
 }

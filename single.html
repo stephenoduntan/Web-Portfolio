@@ -2,17 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Works - Olawole Oduntan</title>
+    <title>Olawole Oduntan - UX Designer || Frontend Developer</title>
     <link rel="shortcut icon" href="./images/OO.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/page.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/work.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+
+    <script src="./script/popup.js" defer></script>
 </head>
 <body>
+    
     <main class="page-wrapper">
         <section class="header">
             <div class="block">
                 <div class="logo-block">
-                    <svg width="163" height="169" viewBox="0 0 163 169" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 60px;">
+                    <svg width="163" height="169" viewBox="0 0 163 169" xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 60px;">
                         <a href="index.html">
                             <ellipse cx="81.9993" cy="155" rx="13.9998" ry="14" fill="whitesmoke"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10 80C10 41.4329 41.9175 10 81.4991 10C121.081 10 152.998 41.4329 152.998 80C152.998 90.9811 150.411 101.384 145.795 110.647C143.433 115.389 135.998 111.298 135.998 106C135.998 76.1767 111.822 52 81.9991 52C52.176 52 27.9997 76.1767 27.9997 106C27.9997 106.12 28.0001 106.241 28.0008 106.361C28.0375 111.968 20.2329 116.529 17.6596 111.548C12.7586 102.06 10 91.3383 10 80ZM59.9987 150.669C59.9987 153.956 56.8756 156.35 53.7775 155.25C22.4536 144.126 0 114.687 0 80C0 35.7244 36.5821 0 81.4991 0C126.416 0 162.998 35.7244 162.998 80C162.998 114.688 140.544 144.127 109.219 155.25C106.121 156.351 102.998 153.957 102.998 150.669V147.647C102.998 145.815 104.013 144.15 105.559 143.168C117.845 135.363 125.998 121.634 125.998 106C125.998 81.6994 106.299 62 81.9991 62C57.6989 62 37.9997 81.6994 37.9997 106C37.9997 121.254 45.7617 134.695 57.5514 142.588C59.0344 143.581 59.9987 145.212 59.9987 146.997V150.669Z" fill="whitesmoke"/>
@@ -21,25 +30,27 @@
                 </div>
 
                 <nav class="nav-link">
-                    <a href="index.html" class="nav-item" >Home</a>
-                    <a href="about.html" class="nav-item" >About</a>
-                    <a href="works.html" class="nav-item nav-active" >Projects</a>
-                    <a href="contact.html" class="nav-item" >Contact</a>
+                    <!-- <a href="index.html" class="nav-item nav-active" >Home</a> -->
+                    <a href="#about" class="nav-item" >About</a>
+                    <a href="#projects" class="nav-item" >Projects</a>
+                    <a href="#contact" class="nav-item" >Contact</a>
 
-                    <svg width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:bottom">
-                        <a href="single.html">
-                            <path d="M24.5 8.1665V15.1081C24.5 15.3018 24.3436 15.4582 24.1499 15.4582H3.85006C3.65639 15.4582 3.5 15.3018 3.5 15.1081V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665H21C23.3333 4.6665 24.5 5.83317 24.5 8.1665ZM3.5 17.5582V19.8332C3.5 22.1665 4.66667 23.3332 7 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V17.5582C24.5 17.3646 24.3436 17.2082 24.1499 17.2082H3.85006C3.65639 17.2082 3.5 17.3646 3.5 17.5582Z" fill="#fff"/>
+                    <svg width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;">
+                        <a href="index.html">
+                            <path d="M7 4.6665H16.2749C16.4686 4.6665 16.625 4.82289 16.625 5.01656V22.9831C16.625 23.1768 16.4686 23.3332 16.2749 23.3332H7C4.66667 23.3332 3.5 22.1665 3.5 19.8332V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665ZM21 4.6665H18.7251C18.5314 4.6665 18.375 4.82289 18.375 5.01656V22.9831C18.375 23.1768 18.5314 23.3332 18.7251 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V8.1665C24.5 5.83317 23.3333 4.6665 21 4.6665Z" fill="#fff"/>
                         </a>
                     </svg>
+                        
+
                 </nav>
 
                 <!-- <button class="menu-btn">
                     <span class="menu-btn-burger"></span>
                 </button> -->
 
-                <svg class="menu-btn" width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <a href="single.html">
-                        <path d="M24.5 8.1665V15.1081C24.5 15.3018 24.3436 15.4582 24.1499 15.4582H3.85006C3.65639 15.4582 3.5 15.3018 3.5 15.1081V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665H21C23.3333 4.6665 24.5 5.83317 24.5 8.1665ZM3.5 17.5582V19.8332C3.5 22.1665 4.66667 23.3332 7 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V17.5582C24.5 17.3646 24.3436 17.2082 24.1499 17.2082H3.85006C3.65639 17.2082 3.5 17.3646 3.5 17.5582Z" fill="#fff"/>
+                <svg class="menu-btn" width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: bottom;">
+                    <a href="index.html">
+                        <path d="M7 4.6665H16.2749C16.4686 4.6665 16.625 4.82289 16.625 5.01656V22.9831C16.625 23.1768 16.4686 23.3332 16.2749 23.3332H7C4.66667 23.3332 3.5 22.1665 3.5 19.8332V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665ZM21 4.6665H18.7251C18.5314 4.6665 18.375 4.82289 18.375 5.01656V22.9831C18.375 23.1768 18.5314 23.3332 18.7251 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V8.1665C24.5 5.83317 23.3333 4.6665 21 4.6665Z" fill="#fff"/>
                     </a>
                 </svg>
             </div>
@@ -51,10 +62,9 @@
                     <span class="menu-btn-burger"></span>
                 </button>
                 <nav class="nav-link">
-                    <a href="index.html" class="nav-item" >Home</a>
-                    <a href="about.html" class="nav-item" >About</a>
-                    <a href="works.html" class="nav-item nav-active" >Projects</a>
-                    <a href="contact.html" class="nav-item" >Contact</a>
+                    <a href="#about" class="nav-item" >About</a>
+                    <a href="#projects" class="nav-item" >Projects</a>
+                    <a href="#contact" class="nav-item" >Contact</a>
                 </nav>
             </div>
             
@@ -62,12 +72,191 @@
             <!-- <aside class="bg">Home</aside> -->
         </section>
 
-        <aside class="bg">Projects</aside>
+        <!-- <aside class="bg">Home</aside> -->
+        <span class="bg-img"></span>
 
         <div class="contents">
-            <section id="works" class="dark-bg">
-                <div class="works-block block">
+            
+            <section id="home" class="dark-bg">
+                <div class="intro block">
+                    <div class="welcome-message">
+                        <!-- Hi there,  -->
+                        <h2 style="font-weight: 400">
+                            <!-- I am  -->
+                            <span class="name">
+                                -- Olawole Oduntan --
+                            </span>
+                        </h2>
+                        
+                    </div>
+
+                    <!-- <div class="image"></div> -->
+
+                    <!-- <div class="welcome">
+                        <h2>Welcome to my Portfolio Website</h2>
+                    </div>  -->
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="about-block block">
+                    <p class="mini-header">Who I am?</p>
+                   
+                    <p class="skill-wrapper">
+                        I'm a <span class="skill skill-name"></span><span id="cursor" class="skill-name">&#9646;</span>
+                    </p>
+
+                    <div class="description">
+                        with over two(2) years of experience. I'm from Lagos, Nigeria. I design, code and create web elements and services for businesses and organizations of all sizes, specializing in creating stylish and modern websites. I like to work with new people. New people are new experiences.
+                    </div>
+
+                    <div class="section-nav">
+                        <a href="works.html">see my works</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skillset" class="dark-bg">
+                <div class="skill-block block">
+                    <p class="mini-header">My skillset</p>
+                   
+                    <p class="skill-wrapper skill-name">
+                        What I do
+                    </p>
+
+                    <div class="skill-block-wrapper">
+                        <div class="skillset-block">
+                        
+                            <div class="skill-card design-block">
+                                
+                                <div class="skill-card-block">
+                                    <div class="skill-title">
+                                        Illustrations
+                                    </div>
+    
+                                    <div class="skill-description">
+                                        Logo, Flyer, Cartoon, Photo Manipulation
+                                    </div>
+                                </div>
+                                <a href="works.html"></a>
+                            </div>
+                            <hr>
+                            <div class="skill-card uiux-block">
+                                
+                                <div class="skill-card-block">
+                                    <div class="skill-title">
+                                        UI/UX
+                                    </div>
+    
+                                    <div class="skill-description">
+                                        Interface design, Case study, Application design
+                                    </div>
+                                </div>
+                                <a href="works.html"></a>
+                            </div>
+                            <hr>
+                            <div class="skill-card dev-block">
+                               
+                                <div class="skill-card-block">
+                                    <div class="skill-title">
+                                        Development
+                                    </div>
+    
+                                    <div class="skill-description">
+                                        Frontend Development - HTML, CSS, Javascript
+                                    </div>
+                                </div>
+                                <a href="works.html"></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+    
+                    <form class="cv-button section-nav" action="Olawole Oduntan CV.pdf" method="GET">
+                        <button type="submit" formtarget="_blank">
+                            view my resume
+                        </button>
+                    </form>
+
+                </div>
+
+                
+            </section>
+
+            
+        </div>
+
+        <div class="contents" id="about">
+            <section id="about" class="dark-bg">
+                <div class="about-block block">
+                    <!-- <p class="mini-header">About</p> -->
+
+                    <p class="skill-name" style="text-align: center;">
+                        Meet Olawole
+                    </p>
+
+                    <div class="description-block">
+
+                        <div class="about-intro">
+                            <div class="image"></div>
+
+                        <!-- <div class="description"> -->
+                            <p class="pitch-note">
+                                I'm a Mathematics Educationist by degree, but I've been endowed with the full custom knowledge of UX design, web development and accessibility. <br> My objective as a designer is to create great visual and functional designs to communicate with all type of people. Through development, my objectuve is to transform based UX design into beautiful and accessible website, creating a wow user experience that speaks for the entity. <br> I possess working experience in design tools such as Adobe Photoshop, Adobe XD, Figma and in development tools such as HTML, CSS, Javascript. Also included in sidelines is my knowledge of Bootstrap, Tailwindcss and Sass/Scss
+                            </p>
+                        </div>
+                        
+                        <!-- <div class="section-nav">
+                            <a href="contact.html">say Hi!</a>
+                        </div> -->
+                        
+                        <form class="cv-button section-nav" action="Olawole Oduntan CV.pdf" method="GET">
+                            <button type="submit" formtarget="_blank">
+                                view my cv
+                            </button>
+                        </form>
+                        <!-- </div> -->
+                        
+                    </div>
+                    
+                </div>
+            </section>
+    
+            <section id="experience" class="dark-bg">
+                <div class="experience-block block">
+
+                    <p class="skill-name" style="text-align: center;">
+                        My work experience
+                    </p>
+
+                    
                     <div class="work-block-nav">
+                        <span class="work-nav-link active-link" id="nav-all">all</span>
+                        <span class="work-nav-link" id="nav-design">design</span>
+                        <span class="work-nav-link" id="nav-uiux">ui/ux</span>
+                        <span class="work-nav-link" id="nav-dev">development</span>
+                    </div>
+
+                    <div id="work-chart" style="display: flex; place-items: center;"></div>
+                    
+                    <form class="section-nav cv-button">
+                        <button type="submit" formaction="contact.html">hire me</button>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="contents" id="projects">
+            <section id="works" class="dark-bg">
+
+                <div class="works-block block">
+                    <p class="skill-name" style="text-align: center; padding: 24px 0px;">
+                        Projects
+                    </p>
+
+                    <div class="work-block-nav" style="text-align: center;">
                         <span class="work-nav-link active-link">all</span>
                         <span class="work-nav-link">design</span>
                         <span class="work-nav-link">ui/ux</span>
@@ -315,9 +504,9 @@
                 </div>
                 
                 <div class="view-modal">
-                    <img src="./images/display/designs/Dr. jay.png" alt="">
+                    <img src="" alt="">
 
-                    <iframe src=" " frameborder="0" width="75%" style="border: 1px solid rgba(0,0,0,0.1);" allowfullscreen sandbox="allow-scripts allow-same-origin"></iframe>
+                    <iframe src=" " frameborder="0" width="75%" style="border: 1px solid rgba(0,0,0,0.1);" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
                     <span class="close-btn">
                         x
@@ -327,6 +516,91 @@
                 
                 
 
+            </section>
+        </div>
+
+        <div class="contents" id="contact">
+            <section id="contact" class="dark-bg">
+                <div class="contact-block block">
+
+                    <div class="form-label">
+                        <span class="skill-name">
+                            Lets get in touch
+                        </span>
+                        <span class="form-label-des">
+                            drop a message
+                        </span>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <form class="contact-form">   
+                       
+                            <!-- <label for="name">Name*</label> -->
+                            <input type="text" name="name" id="subject" placeholder="Your name" required>
+                            
+    
+                            
+                            <!-- <label for="email">Email Address*</label> -->
+                            <input type="email" name="name" id="" placeholder="Email address" required>
+                            
+    
+                        
+                            <!-- <label for="phone">Phone Number*</label>
+                            <input type="number" name="phone" id="phone" placeholder="Your contact number" required> -->
+                            
+    
+                            
+                            <!-- <label for="Message">Message*</label> -->
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Hello Olawole, I've got an idea. Let's collaborate😉" required></textarea>
+                            
+    
+                        
+                            <input class="cv-button section-nav" type="submit" value="send message" id="contact-btn">
+                            
+                            
+                        </form>
+
+
+                        <div class="google-map">
+                            <div style="overflow:hidden;resize:none;max-width:100%;width:100%;height: 100%;">
+                                <div id="my-map-display" style="height:100%; width:100%;max-width:100%;">
+                                    <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Alimosho,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                </div>
+                                
+                                <a class="googlecoder" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a>
+                                <style>#my-map-display img{max-height:none;     max-width:none!important;background:none!important;}
+                                </style>
+                            </div>
+                        </div>
+                        
+                    </div>          
+                
+                </div>
+
+                <div class="status-wrapper success">
+                    <div class="status-box">
+                        <div class="status" style="text-align: center; font-size: 20px;">
+                            <img src="./images/pictures/73723-emoticon-smiley-sticker-honda-up-amaze-thumbs.png" alt="" style="width: 50%">
+                            <p>
+                                Your message has been sent successfully <br>
+                                I'll been sure to get to you as soon as possible
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-wrapper error">
+                        <div class="status-box">
+                            <div class="status" style="text-align: center; font-size: 20px;">
+                                <img src="./images/pictures/65053-emoticon-play-google-angry-emojiworld-sadness-emoji.png" alt="" style="width: 50%">
+                                <p>
+                                    It seems an error has occured <br>
+                                    Please try sending your message again
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                
             </section>
         </div>
 
@@ -387,7 +661,13 @@
         <span><a href="contact.html">Let's get in touch</a></span>
     </footer>
 
+
+
+    <script src="./script/typewriter.js"></script>  
     <script src="./script/script.js"></script>
-    <script src="./script/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./script/chart.js"></script>
+    <script src="./script/contact.js"></script>
 </body>
+
 </html>

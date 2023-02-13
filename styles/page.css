@@ -115,29 +115,35 @@ button{
 }
 
 section.nav-link-mini{
-    height: 0%;
+    height: 100px;
     width: 100%;
-    opacity: 0.975;
     position: fixed;
+    bottom: 24px;
     display: none;
     justify-content: center;
-    align-items: flex-start;
-    background: hsl(0deg 0% 5%);
+    align-items: center;
     z-index: 20;
     transition: all .5s linear;
 }
-section.nav-link-mini .nav-link{
+section.nav-link-mini .nav-items{
+    height: 100%;
     display: flex;
-    justify-content: center;
-    padding: 25% 0%;
-    position: fixed;
-    flex-direction: column;
-    gap: 50px;
-    text-align: center;
+    align-items: center;
+    background: rgba(0,0,0, .95);
+    box-shadow: 0px 0px 24px #242424;
     z-index: 25;
+    padding: 0px 20px;
+    border-radius: 96px;
+    transition: all .5s linear;
+}
+section.nav-link-mini .nav-items .nav-link{
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
 }
 section.nav-link-mini .nav-link a{
-    font-size: 48px;
+    font-size: 36px;
 }
 section.nav-link-mini .nav-link a::after,
 section.nav-link-mini .nav-link .nav-active{
@@ -145,8 +151,7 @@ section.nav-link-mini .nav-link .nav-active{
 }
 .mini-nav-active{
     display: flex !important;
-    height: 100% !important;
-    bottom: 0;
+    transition: all .5s linear;
 }
 
 .menu-btn{
@@ -304,7 +309,10 @@ section.nav-link-mini aside.bg{
     .nav-link{
         display: none;
     }
-    button.menu-btn{
+    section.nav-link-mini{
+        display: flex;
+    }
+    .menu-btn{
         display: flex;
     }
     aside.bg{
@@ -318,11 +326,6 @@ section.nav-link-mini aside.bg{
     }
     .footer-wrapper{
         gap: 0px;
-    }
-}
-@media(min-width: 769px){
-    section.nav-link-mini{
-        display: none !important;
     }
 }
 @media(max-width: 768px){

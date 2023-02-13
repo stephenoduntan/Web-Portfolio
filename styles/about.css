@@ -1,17 +1,19 @@
 .about-intro{
     margin: 24px 0;
     text-align: justify;
-    gap: 40px;
+    display: flex;
+    gap: 50px;
 }
 
 .about-intro .image{
-    width: 280px;
-    height: 360px;
+    width: 150%;
     margin: 0 24px;
-    float: right;
+    /* float: right; */
+    height: auto;
 }
 .about-intro .image::before{
-    background-image: url("../images/pictures/IMG_20200729_125357.jpg");
+    /* background-image: url("../images/pictures/IMG_20200729_125357.jpg"); */
+    background-image: url("../images/pictures/moi.jpg")
 }
 .about-intro .section-nav{
     text-align: center;
@@ -73,13 +75,21 @@ input[type=submit]{
     background: steelblue;
 }
 
-@media(max-width: 425px){
+
+@media(max-width: 1230px){
     .about-block .skill-name{
         text-align: center;
     }
+    .about-intro{
+        flex-direction: column;
+    }
     .about-intro .image{
-        float: none;
-        margin: 0 auto 24px;
         width: 85%;
+        height: 640px;
+    }
+}
+@media(max-width: 425px){
+    .about-intro .image{
+        height: 360px;
     }
 }

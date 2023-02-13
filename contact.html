@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Olawole Oduntan</title>
+    <title>Get in touch - Olawole Oduntan</title>
     <link rel="shortcut icon" href="./images/OO.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -25,25 +25,43 @@
                     <a href="about.html" class="nav-item" >About</a>
                     <a href="works.html" class="nav-item" >Projects</a>
                     <a href="contact.html" class="nav-item nav-active" >Contact</a>
+
+                    <svg width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:bottom">
+                        <a href="single.html">
+                            <path d="M24.5 8.1665V15.1081C24.5 15.3018 24.3436 15.4582 24.1499 15.4582H3.85006C3.65639 15.4582 3.5 15.3018 3.5 15.1081V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665H21C23.3333 4.6665 24.5 5.83317 24.5 8.1665ZM3.5 17.5582V19.8332C3.5 22.1665 4.66667 23.3332 7 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V17.5582C24.5 17.3646 24.3436 17.2082 24.1499 17.2082H3.85006C3.65639 17.2082 3.5 17.3646 3.5 17.5582Z" fill="#fff"/>
+                        </a>
+                    </svg>
                 </nav>
 
-                <button class="menu-btn">
+                <!-- <button class="menu-btn">
                     <span class="menu-btn-burger"></span>
-                </button>
+                </button> -->
+
+                <svg class="menu-btn" width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="single.html">
+                        <path d="M24.5 8.1665V15.1081C24.5 15.3018 24.3436 15.4582 24.1499 15.4582H3.85006C3.65639 15.4582 3.5 15.3018 3.5 15.1081V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665H21C23.3333 4.6665 24.5 5.83317 24.5 8.1665ZM3.5 17.5582V19.8332C3.5 22.1665 4.66667 23.3332 7 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V17.5582C24.5 17.3646 24.3436 17.2082 24.1499 17.2082H3.85006C3.65639 17.2082 3.5 17.3646 3.5 17.5582Z" fill="#fff"/>
+                    </a>
+                </svg>
             </div>
         </section>
 
         <section class="nav-link-mini">
-            <nav class="nav-link">
-                <a href="index.html" class="nav-item" >Home</a>
-                <a href="about.html" class="nav-item" >About</a>
-                <a href="works.html" class="nav-item" >Projects</a>
-                <a href="contact.html" class="nav-item nav-active" >Contact</a>
-            </nav>
+            <div class="nav-items">
+                <button class="menu-btn">
+                    <span class="menu-btn-burger"></span>
+                </button>
+                <nav class="nav-link">
+                    <a href="index.html" class="nav-item" >Home</a>
+                    <a href="about.html" class="nav-item" >About</a>
+                    <a href="works.html" class="nav-item" >Projects</a>
+                    <a href="contact.html" class="nav-item nav-active" >Contact</a>
+                </nav>
+            </div>
+            
 
-            <aside class="bg">Contact</aside>
+            <!-- <aside class="bg">Home</aside> -->
         </section>
-
+        
         <aside class="bg">Contact</aside>
 
         <div class="contents">
@@ -62,23 +80,23 @@
                     <div class="form-wrapper">
                         <form class="contact-form">   
                        
-                            <label for="name">Name*</label>
-                            <input type="text" name="name" id="subject" placeholder="What do I call you?" required>
+                            <!-- <label for="name">Name*</label> -->
+                            <input type="text" name="name" id="subject" placeholder="Your name" required>
                             
     
                             
-                            <label for="email">Email Address*</label>
-                            <input type="email" name="name" id="" placeholder="Your email" required>
+                            <!-- <label for="email">Email Address*</label> -->
+                            <input type="email" name="name" id="" placeholder="Email address" required>
                             
     
                         
-                            <label for="phone">Phone Number*</label>
-                            <input type="number" name="phone" id="phone" placeholder="Your contact number" required>
+                            <!-- <label for="phone">Phone Number*</label>
+                            <input type="number" name="phone" id="phone" placeholder="Your contact number" required> -->
                             
     
                             
-                            <label for="Message">Message*</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="How may I be of help?" required></textarea>
+                            <!-- <label for="Message">Message*</label> -->
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Hello Olawole, I've got an idea. Let's collaborate😉" required></textarea>
                             
     
                         
@@ -86,6 +104,20 @@
                             
                             
                         </form>
+
+
+                        <div class="google-map">
+                            <div style="overflow:hidden;resize:none;max-width:100%;width:100%;height: 100%;">
+                                <div id="my-map-display" style="height:100%; width:100%;max-width:100%;">
+                                    <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Alimosho,+Lagos,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                </div>
+                                
+                                <a class="googlecoder" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a>
+                                <style>#my-map-display img{max-height:none;     max-width:none!important;background:none!important;}
+                                </style>
+                            </div>
+                        </div>
+                        
                     </div>           
                 
                 </div>
@@ -108,7 +140,7 @@
                                 <img src="./images/pictures/65053-emoticon-play-google-angry-emojiworld-sadness-emoji.png" alt="" style="width: 50%">
                                 <p>
                                     It seems an error has occured <br>
-                                    Please try sending your message again
+                                    Check network connection and again
                                 </p>
                             </div>
                         </div>

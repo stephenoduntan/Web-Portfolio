@@ -49,7 +49,7 @@ miniNav(workNavItem, workImage);
 
 //menu button on small device view
 let menuBtn = document.querySelector('button.menu-btn');
-let miniMenu = document.querySelector('.nav-link-mini');
+let miniMenu = document.querySelector('.nav-link-mini .nav-items .nav-link');
 let menuOpen = false;
 
 menuBtn.addEventListener('click', function(){

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Olawole Oduntan</title>
+    <title>About Me - Olawole Oduntan</title>
     <link rel="shortcut icon" href="./images/OO.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -28,23 +28,41 @@
                     <a href="about.html" class="nav-item nav-active" >About</a>
                     <a href="works.html" class="nav-item" >Projects</a>
                     <a href="contact.html" class="nav-item" >Contact</a>
+
+                    <svg width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:bottom">
+                        <a href="single.html">
+                            <path d="M24.5 8.1665V15.1081C24.5 15.3018 24.3436 15.4582 24.1499 15.4582H3.85006C3.65639 15.4582 3.5 15.3018 3.5 15.1081V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665H21C23.3333 4.6665 24.5 5.83317 24.5 8.1665ZM3.5 17.5582V19.8332C3.5 22.1665 4.66667 23.3332 7 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V17.5582C24.5 17.3646 24.3436 17.2082 24.1499 17.2082H3.85006C3.65639 17.2082 3.5 17.3646 3.5 17.5582Z" fill="#fff"/>
+                        </a>
+                    </svg>
                 </nav>
 
-                <button class="menu-btn">
+                <!-- <button class="menu-btn">
                     <span class="menu-btn-burger"></span>
-                </button>
+                </button> -->
+
+                <svg class="menu-btn" width="36" height="36" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="single.html">
+                        <path d="M24.5 8.1665V15.1081C24.5 15.3018 24.3436 15.4582 24.1499 15.4582H3.85006C3.65639 15.4582 3.5 15.3018 3.5 15.1081V8.1665C3.5 5.83317 4.66667 4.6665 7 4.6665H21C23.3333 4.6665 24.5 5.83317 24.5 8.1665ZM3.5 17.5582V19.8332C3.5 22.1665 4.66667 23.3332 7 23.3332H21C23.3333 23.3332 24.5 22.1665 24.5 19.8332V17.5582C24.5 17.3646 24.3436 17.2082 24.1499 17.2082H3.85006C3.65639 17.2082 3.5 17.3646 3.5 17.5582Z" fill="#fff"/>
+                    </a>
+                </svg>
             </div>
         </section>
 
         <section class="nav-link-mini">
-            <nav class="nav-link">
-                <a href="index.html" class="nav-item" >Home</a>
-                <a href="about.html" class="nav-item nav-active" >About</a>
-                <a href="works.html" class="nav-item" >Projects</a>
-                <a href="contact.html" class="nav-item" >Contact</a>
-            </nav>
+            <div class="nav-items">
+                <button class="menu-btn">
+                    <span class="menu-btn-burger"></span>
+                </button>
+                <nav class="nav-link">
+                    <a href="index.html" class="nav-item" >Home</a>
+                    <a href="about.html" class="nav-item  nav-active" >About</a>
+                    <a href="works.html" class="nav-item" >Projects</a>
+                    <a href="contact.html" class="nav-item" >Contact</a>
+                </nav>
+            </div>
+            
 
-            <aside class="bg">About</aside>
+            <!-- <aside class="bg">Home</aside> -->
         </section>
 
         <aside class="bg">About</aside>
@@ -58,18 +76,26 @@
                         Meet Olawole
                     </p>
 
-                    <div class="about-intro description">
-                        <div class="image"></div>
+                    <div class="description-block">
+
+                        <div class="about-intro">
+                            <div class="image"></div>
 
                         <!-- <div class="description"> -->
-                            I'm a Mathematics Educationist by degree, but I've been endowed with the full custom knowledge of UX design, web development and accessibility. <br> My objective as a designer is to create great visual and functional designs to communicate with all type of people. Through development, my objectuve is to transform based UX design into beautiful and accessible website, creating a wow user experience that speaks for the entity. <br> I possess working experience in design tools such as Adobe Photoshop, Adobe XD, Figma and in development tools such as HTML, CSS, Javascript. Also included in sidelines is my knowledge of Bootstrap, Tailwindcss and Sass/Scss
-
-                            <!-- <div class="section-nav">
-                                <a href="contact.html">say Hi!</a>
-                            </div> -->
-                            <form class="section-nav cv-button">
-                                <button type="submit" formaction="contact.html">hire me</button>
-                            </form>
+                            <p class="pitch-note">
+                                I'm a Mathematics Educationist by degree, but I've been endowed with the full custom knowledge of UX design, web development and accessibility. <br> My objective as a designer is to create great visual and functional designs to communicate with all type of people. Through development, my objectuve is to transform based UX design into beautiful and accessible website, creating a wow user experience that speaks for the entity. <br> I possess working experience in design tools such as Adobe Photoshop, Adobe XD, Figma and in development tools such as HTML, CSS, Javascript. Also included in sidelines is my knowledge of Bootstrap, Tailwindcss and Sass/Scss
+                            </p>
+                        </div>
+                        
+                        <!-- <div class="section-nav">
+                            <a href="contact.html">say Hi!</a>
+                        </div> -->
+                        
+                        <form class="cv-button section-nav" action="Olawole Oduntan CV.pdf" method="GET">
+                            <button type="submit" formtarget="_blank">
+                                view my cv
+                            </button>
+                        </form>
                         <!-- </div> -->
                         
                     </div>
@@ -94,10 +120,8 @@
 
                     <div id="work-chart" style="display: flex; place-items: center;"></div>
                     
-                    <form class="cv-button section-nav" action="Oduntan Olawole CV.pdf" method="GET">
-                        <button type="submit" formtarget="_blank">
-                            view my cv
-                        </button>
+                    <form class="section-nav cv-button">
+                        <button type="submit" formaction="contact.html">hire me</button>
                     </form>
 
                 </div>
