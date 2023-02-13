@@ -41,7 +41,7 @@ html {
 
 a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.500);
+    color: #ffffff80;
 }
 a:hover, .nav-active{
     color: rgba(255, 255, 255, 1);
@@ -126,7 +126,7 @@ section.nav-link-mini{
     transition: all .5s linear;
 }
 section.nav-link-mini .nav-items{
-    height: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     background: rgba(0,0,0, .95);
@@ -141,9 +141,16 @@ section.nav-link-mini .nav-items .nav-link{
     align-items: center;
     gap: 24px;
     text-align: center;
+    transition: all .5s linear;
 }
 section.nav-link-mini .nav-link a{
-    font-size: 36px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+section.nav-link-mini .nav-link a svg{
+    display: none;
 }
 section.nav-link-mini .nav-link a::after,
 section.nav-link-mini .nav-link .nav-active{
@@ -151,7 +158,7 @@ section.nav-link-mini .nav-link .nav-active{
 }
 .mini-nav-active{
     display: flex !important;
-    transition: all .5s linear;
+    /* transition: all .5s linear; */
 }
 
 .menu-btn{
@@ -159,14 +166,14 @@ section.nav-link-mini .nav-link .nav-active{
     display: none;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     transition: all .5s ease-in-out;
 }
 .menu-btn .menu-btn-burger{
-    width: 44px;
+    width: 30px;
     display: flex;
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
     background: white;
     transition: all .5s ease-in-out;
@@ -175,17 +182,19 @@ section.nav-link-mini .nav-link .nav-active{
 .menu-btn .menu-btn-burger::after{
     content: " ";
     position: absolute;
-    width: 44px;
-    height: 5px;
+    width: 30px;
+    height: 3px;
     border-radius: 5px;
     background: white;
     transition: all .5s ease-in-out;
 }
 .menu-btn .menu-btn-burger::before{
     transform: translateY(-12px);
+    background: rgb(233, 33, 33);
 }
 .menu-btn .menu-btn-burger::after{
     transform: translateY(12px);
+    background: rgb(233, 33, 33);
 }
 .menu-btn.open .menu-btn-burger{
     transform: translateX(-40px);
@@ -338,5 +347,13 @@ section.nav-link-mini aside.bg{
     section .block,
     .footer-wrapper{
         margin: 30px auto;
+    }
+}
+@media(max-width: 425px){
+    section.nav-link-mini .nav-link a svg{
+        display: block;
+    }
+    section.nav-link-mini .nav-link .link-text{
+        display: none;
     }
 }

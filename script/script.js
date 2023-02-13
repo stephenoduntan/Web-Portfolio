@@ -4,6 +4,7 @@ const navLink = document.querySelectorAll('.nav-link a');
 const conSect = document.querySelectorAll('.contents section');
 const workNavItem = document.querySelectorAll('.work-nav-link');
 const workImage = document.querySelectorAll('.work-image');
+const singlePageNav = document.querySelector('#single-page-nav a');
 const progressBarContainer = document.querySelector("#progressBarContainer");
 const progressBar = document.querySelector("#progressBar");
 let totalPageHeight = document.body.scrollHeight - window.innerHeight;
@@ -14,6 +15,16 @@ let debounceResize;
 document.addEventListener('scroll', function(){
     pageHeader.classList.add('fixed')
 })
+
+// function singleNavBar(){
+//     for(i = 0; i < singlePageNav.length; i++){
+//     singlePageNav[i].addEventListener('click', function(event){
+//         let active = document.getElementsByClassName('nav-active')
+//         active[0].className = active[0].className.replace('nav-active', '_')
+//         this.className += ' nav-active';
+//     })
+// }}
+
 
 //Function to seperate categories
 function miniNav(nav, changecat){
